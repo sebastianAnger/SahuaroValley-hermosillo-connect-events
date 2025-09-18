@@ -22,14 +22,12 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          light: "hsl(var(--primary-light))",
+          hover: "hsl(var(--primary-hover))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
-        },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
         },
         muted: {
           DEFAULT: "hsl(var(--muted))",
@@ -38,10 +36,8 @@ export default {
         accent: {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
-        },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
+          light: "hsl(var(--accent-light))",
+          hover: "hsl(var(--accent-hover))",
         },
         card: {
           DEFAULT: "hsl(var(--card))",
@@ -80,10 +76,47 @@ export default {
             height: "0",
           },
         },
+        "fade-up": {
+          from: {
+            opacity: "0",
+            transform: "translateY(30px)"
+          },
+          to: {
+            opacity: "1",
+            transform: "translateY(0)"
+          }
+        },
+        "scale-in": {
+          from: {
+            opacity: "0",
+            transform: "scale(0.9)"
+          },
+          to: {
+            opacity: "1",
+            transform: "scale(1)"
+          }
+        },
+        "pulse-glow": {
+          "0%, 100%": {
+            filter: "drop-shadow(0 0 5px hsl(var(--accent) / 0.5))"
+          },
+          "50%": {
+            filter: "drop-shadow(0 0 20px hsl(var(--accent) / 0.8))"
+          }
+        }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "fade-up": "fade-up 0.6s ease-out",
+        "scale-in": "scale-in 0.3s ease-out",
+        "pulse-glow": "pulse-glow 2s ease-in-out infinite",
+      },
+      boxShadow: {
+        "card": "var(--shadow-card)",
+        "card-hover": "var(--shadow-card-hover)",
+        "pin": "var(--shadow-pin)",
+        "glow": "var(--glow-accent)",
       },
     },
   },
