@@ -111,7 +111,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-primary-foreground/20 mt-8 pt-6 text-center">
           <p className="text-primary-foreground/60 text-sm">
-            © 2024 Talleres Hermosillo. Todos los derechos reservados. Hecho con ❤️ en Sonora.
+            © 2025 Talleres Hermosillo. Todos los derechos reservados. Hecho con ❤️ en Sonora por <a href="https://github.com/sebastianAnger">sebastianAnger</a>.
           </p>
         </div>
       </div>

@@ -25,7 +25,7 @@ const Header = () => {
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         <div className="animate-fade-up">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-            Networking HMO
+            Sahuaro Valley
             {/* <span className="block text-gradient-accent">
               Talleres en Hermosillo
             </span> */}
